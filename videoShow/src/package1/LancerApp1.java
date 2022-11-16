@@ -42,6 +42,16 @@ public class LancerApp1 {
 		Forme f2 =new PolygoneRegulier(5, 240, 40, 40, 4.0f, Color.BLACK, Color.BLACK);
 		d.ajouterObjet(f1);
 	    d.ajouterObjet(f2);
+	    
+	    Forme e3=new Etoile(230,250,10,8.f,Color.yellow, Color.yellow);
+    	 MvtCirculaire mvt=new MvtCirculaire(110,230,34,56.4,32.6);
+    	 AnimationForme animfor= new AnimationForme(e3,mvt);
+        d.ajouterObjet(animfor);
+    	 MvtCirculaire mvt2=new MvtCirculaire(90,150,34,56.4,32.6);
+        Forme p2=new PolygoneRegulier(5,240,40,40,4.0f,Color.gray, Color.gray);
+        AnimationForme animfor2= new AnimationForme(p2,mvt2);
+        d.ajouterObjet(animfor2);
+        
 		while(true) {
 		// la zone de dessin se r�affiche
 		d.repaint();
